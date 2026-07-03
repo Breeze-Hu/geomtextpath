@@ -39,7 +39,6 @@ geom_textvline <- function(
     }
     if (!is.null(data)) {
       warn_overwritten_args("geom_textvline()", "data", "xintercept")
-      data$xintercept <- xintercept
     }
 
     data <- data.frame(xintercept = xintercept)
@@ -118,7 +117,6 @@ geom_labelvline <- function(
     }
     if (!is.null(data)) {
       warn_overwritten_args("geom_labelvline()", "data", "xintercept")
-      data$xintercept <- xintercept
     }
 
     data <- data.frame(xintercept = xintercept)

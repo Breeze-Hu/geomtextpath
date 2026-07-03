@@ -25,7 +25,6 @@ geom_texthline <- function(
     }
     if (!is.null(data)) {
       warn_overwritten_args("geom_texthline()", "data", "yintercept")
-      data$yintercept <- yintercept
     }
 
     data <- data.frame(yintercept = yintercept)
@@ -111,7 +110,6 @@ geom_labelhline <- function(
     }
     if (!is.null(data)) {
       warn_overwritten_args("geom_labelhline()", "data", "yintercept")
-      data$yintercept <- yintercept
     }
 
     data <- data.frame(yintercept = yintercept)
