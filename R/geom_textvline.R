@@ -41,10 +41,8 @@ geom_textvline <- function(
       warn_overwritten_args("geom_textvline()", "data", "xintercept")
       data$xintercept <- xintercept
     }
-    mapping <- unclass(mapping)
-    mapping[["xintercept"]] <- xintercept
-    class(mapping) <- "uneval"
 
+    data <- data.frame(xintercept = xintercept)
     mapping <- aes(xintercept = xintercept)
     show.legend <- FALSE
   }
@@ -122,10 +120,8 @@ geom_labelvline <- function(
       warn_overwritten_args("geom_labelvline()", "data", "xintercept")
       data$xintercept <- xintercept
     }
-    mapping <- unclass(mapping)
-    mapping[["xintercept"]] <- xintercept
-    class(mapping) <- "uneval"
 
+    data <- data.frame(xintercept = xintercept)
     mapping <- aes(xintercept = xintercept)
     show.legend <- FALSE
   }
