@@ -30,6 +30,8 @@ geom_texthline <- function(
     data <- data.frame(yintercept = yintercept)
     mapping <- aes(yintercept = yintercept)
     show.legend <- FALSE
+
+    inherit.aes = FALSE
   }
 
   layer(
@@ -39,7 +41,7 @@ geom_texthline <- function(
     geom = GeomTexthline,
     position = PositionIdentity,
     show.legend = show.legend,
-    inherit.aes = FALSE,
+    inherit.aes = inherit.aes,
     params = list(
       na.rm = na.rm,
       arrow = arrow,
@@ -115,6 +117,8 @@ geom_labelhline <- function(
     data <- data.frame(yintercept = yintercept)
     mapping <- aes(yintercept = yintercept)
     show.legend <- FALSE
+
+    inherit.aes = FALSE
   }
 
   layer(
@@ -124,7 +128,7 @@ geom_labelhline <- function(
     geom = GeomLabelhline,
     position = PositionIdentity,
     show.legend = show.legend,
-    inherit.aes = FALSE,
+    inherit.aes = inherit.aes,
     params = set_params(
       arrow = arrow,
       na.rm = na.rm,
