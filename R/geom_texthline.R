@@ -114,7 +114,7 @@ geom_labelhline <- function(
       warn_overwritten_args("geom_labelhline()", "data", "yintercept")
     }
 
-    data <- data.frame(yintercept = yintercept)
+    data <- data_frame(yintercept = yintercept)
     mapping <- aes(yintercept = yintercept)
     show.legend <- FALSE
 

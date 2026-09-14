@@ -231,10 +231,7 @@ construct_abline <- function(
       data$intercept <- intercept[1]
     }
 
-    mapping <- unclass(mapping)
-    mapping[["intercept"]] <- intercept
-    mapping[["slope"]]     <- slope
-    class(mapping) <- "uneval"
+    mapping <- aes(intercept = intercept, slope = slope)
     show.legend <- FALSE
   }
 

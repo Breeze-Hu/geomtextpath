@@ -120,7 +120,7 @@ geom_labelvline <- function(
       warn_overwritten_args("geom_labelvline()", "data", "xintercept")
     }
 
-    data <- data.frame(xintercept = xintercept)
+    data <- data_frame(xintercept = xintercept)
     mapping <- aes(xintercept = xintercept)
     show.legend <- FALSE
     inherit.aes = FALSE
