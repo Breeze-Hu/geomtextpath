@@ -27,7 +27,7 @@ geom_texthline <- function(
       warn_overwritten_args("geom_texthline()", "data", "yintercept")
     }
 
-    data <- data.frame(yintercept = yintercept)
+    data <- data_frame(yintercept = yintercept)
     mapping <- aes(yintercept = yintercept)
     show.legend <- FALSE
 

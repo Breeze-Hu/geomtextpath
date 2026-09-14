@@ -41,7 +41,7 @@ geom_textvline <- function(
       warn_overwritten_args("geom_textvline()", "data", "xintercept")
     }
 
-    data <- data.frame(xintercept = xintercept)
+    data <- data_frame(xintercept = xintercept)
     mapping <- aes(xintercept = xintercept)
     show.legend <- FALSE
     inherit.aes = FALSE
